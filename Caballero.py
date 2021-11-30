@@ -2,7 +2,7 @@
 from Unidad_de_juego import Unidad_de_juego
 from Funciones import *
 
-
+# acuerdate de crear mas clases 
 class Caballero(Unidad_de_juego):
     def __init__(self,Nombre='Sir Gandorel'):
         Unidad_de_juego.__init__(self, Nombre)
