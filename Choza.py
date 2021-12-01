@@ -16,7 +16,12 @@ class Choza:
         if self.conquistada:
             tipo_ocupante = 'Conquistada'
         elif self.ocupantes is None:
-            tipo_ocupante = self.ocupantes.tipo_unidad
+            listatesoro=["tesoro","Vacia"]
+            resultadotesoro=random.choice(listatesoro)
+            if resultadotesoro == 'Vacia':
+                tipo_ocupante = 'Vacia'
+            else:
+                tipo_ocupante = 'tesoro'
         else:
             tipo_ocupante = self.ocupantes.tipo_unidad
 
