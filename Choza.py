@@ -16,7 +16,7 @@ class Choza:
         if self.conquistada:
             tipo_ocupante = 'Conquistada'
         elif self.ocupantes is None:
-            tipo_ocupante = 'No ocupada'
+            tipo_ocupante = self.ocupantes.tipo_unidad
         else:
             tipo_ocupante = self.ocupantes.tipo_unidad
 

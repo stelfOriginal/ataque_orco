@@ -11,5 +11,9 @@ class Orco(Unidad_de_juego):
         self.tipo_unidad = 'enemigo'
         self.numero_choza = 0
 
+    # este codigo aun no esta ejecutado para verse 
     def info(self):
-        print("Grrrr..Soy un Orco montador de huargos. Creo que esta noche serás mi cena")
+        list1 = ["Grrrr..Soy un Orco montador de huargos. Creo que esta noche serás mi cena", 
+        "Tu ser apetitoso?creo que muy huesudo",
+        "Mira hermano,carne con armadura,comamos!"]
+        print(random.choice(list1))
