@@ -39,12 +39,20 @@ class Caballero(Unidad_de_juego):
                     print("")
                     break
         else:
-            if Choza.Tipo_de_ocupante() == 'No ocupada':
+            if Choza.Tipo_de_ocupante() == 'Vacia':
                 print_bold("La choza está vacía")
+                print_bold("Recuperas tus heridas sitiado en soledad")
+                self.curar()
+            elif Choza.Tipo_de_ocupante() == 'tesoro':
+                droptesoro=[" ganaste 50 monedas"," ganaste 5 monedas"," ganaste polvo"]
+                resultadodrop=random.choice(droptesoro)
+                print_bold(resultadodrop)
             else:
                 print_bold("¡Amigo avistado!")
+                print_bold("Te has curado")
+                self.curar()
             Choza.conquistar(self)
-            self.curar()
+            
 
     def huir(self):
         print_bold("Escapando del enemigo...")

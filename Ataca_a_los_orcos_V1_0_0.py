@@ -31,7 +31,7 @@ class Juego:
         print_bold("Misión:")
         print("  1. Lucha contra el enemigo.")
         print("  2. Conquista cada una de las chozas hasta que estén bajo tu control")
-        print("  3. Cada vez que se entre a una choza aliada o no ocupada Sir Gandorel recuperara su salud")
+        print("  3. Cada vez que se entre a una choza vacia te recuperaras vida y si entras a una del tesoro tendras la opcion de encontrarte nada o dinero")
         print("-"*72)
 
     def _procesar_decision(self):
